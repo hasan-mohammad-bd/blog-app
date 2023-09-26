@@ -17,5 +17,5 @@ export const ThemeContextProvider= ({children})=> {
     const [ theme, setTheme] = useState(()=>{
         return getFromLocalStorage;
     })
-    return <ThemeContext.Provider>{children}</ThemeContext.Provider>
+    return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
 }
