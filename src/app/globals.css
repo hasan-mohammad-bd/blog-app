@@ -2,9 +2,7 @@
     --bg:white,
     --textColor:black,
     --softBg: #f0f0f0,
-    --softTextColor: #626262
-
-    
+    --softTextColor: #626262   
 }
 
 *{
@@ -81,3 +79,11 @@ a{
 
     }
 }
+
+.ql-container{
+    font-size: 28px !important;
+  }
+  
+  .quill > .ql-container > .ql-editor.ql-blank::before{
+    color: #b3b3b1;
+  }
