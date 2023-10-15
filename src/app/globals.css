@@ -51,6 +51,32 @@ a{
 
 }
 
+.category-list .fashion{
+    background-color: rgba(148, 230, 255, 0.473); 
+
+}
+.category-list .style{
+    background-color: rgba(243, 212, 172, 0.644);
+
+}
+.category-list .food{
+    background-color: rgb(218, 241, 146);
+
+}
+.category-list .travel{
+    background-color: rgb(230, 255, 251);
+
+}
+.category-list .coding{
+    background-color: rgb(239, 247, 255);
+
+}
+.category-list .culture{
+    background-color: rgb(244, 249, 255);
+
+}
+
+
 @media screen and (max-width:1536px){
     .wrapper{
         max-width: 1366px;
