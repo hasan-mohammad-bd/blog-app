@@ -8,6 +8,6 @@ const nextConfig = {
     }
 }
 
-//what the hell is going on
+
 
 module.exports = nextConfig
