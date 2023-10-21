@@ -68,6 +68,7 @@ model Category {
 model Post {
   id        String    @id @default(cuid()) @map("_id")
   slug      String    @unique
+  createdAt DateTime  @default(now())
   title     String
   desc      String
   img       String?
@@ -77,8 +78,8 @@ model Post {
   userEmail String
   user      User      @relation(fields: [userEmail], references: [email])
   Comment   Comment[]
+  
 }
-
 
 model Comment {
   id        String   @id @default(cuid()) @map("_id")
@@ -90,5 +91,3 @@ model Comment {
   postSlug  String
   post      Post     @relation(fields: [postSlug], references: [slug])
 }
-
-
