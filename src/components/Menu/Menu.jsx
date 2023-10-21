@@ -3,7 +3,9 @@ import styles from "./menu.module.css";
 import Link from 'next/link';
 import Image from 'next/image';
 import MenuPost from '../menuPost/MenuPost';
-import MenuCategory from '../menuCategory/menuCategory';
+import MenuCategory from '../menuCategory/MenuCategory';
+
+
 const Menu = () => {
     return (
         <div className={styles.container}>
