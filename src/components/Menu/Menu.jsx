@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MenuPost from '../menuPost/MenuPost';
 import MenuCategory from '../menuCategory/menuCategory';
+import MenuCategory2 from '../menuCategory/MenuCategory2';
 const Menu = () => {
     return (
         <div className={styles.container}>
@@ -15,7 +16,7 @@ const Menu = () => {
            {/* catagories */}
            <h2 className={styles.subtitle}>Discover by the </h2>
            <h1 className={styles.title}>Categories</h1>
-           <MenuCategory/>
+            <MenuCategory2/>
 
 
            {/* Chosen by the Editor Section */}
