@@ -54,7 +54,7 @@ const Comments = ({ postSlug }) => {
       <div className={styles.comments}>
         {isLoading
           ? "Loading"
-          : data.map((item) => (
+          : data?.map((item) => (
               <div key={item?._id} className={styles.comment}>
                 <div className={styles.user}>
                   <Image
