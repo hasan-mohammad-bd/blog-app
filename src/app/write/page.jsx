@@ -13,6 +13,7 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
+import dynamic from "next/dynamic";
 
 
 const WritePage = () => {
@@ -66,9 +67,9 @@ const WritePage = () => {
     return <div className={styles.loading}>Loading...</div>;
   }
 
-  if (status === "unauthenticated") {
+/*   if (status === "unauthenticated") {
     router.push("/");
-  }
+  } */
 
   const slugify = (str) =>
     str
@@ -79,7 +80,7 @@ const WritePage = () => {
       .replace(/^-+|-+$/g, "");
 
   const handleSubmit = async () => {
-    const res = await fetch("/api/posts", {
+    const res = await fetch("https://blog-app-ochre-kappa.vercel.app/api/posts", {
       method: "POST",
       body: JSON.stringify({
         title,
